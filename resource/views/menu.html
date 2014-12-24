@@ -1,0 +1,32 @@
+<ion-side-menus>
+	<ion-pane ion-side-menu-content>
+		<ion-nav-bar class="bar-assertive nav-title-slide-ios7">
+			<ion-nav-back-button class="button-clear">
+				<i class="icon ion-ios7-arrow-back"></i>
+			</ion-nav-back-button>
+		</ion-nav-bar>
+		<ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+	</ion-pane>
+	<ion-side-menu side="left" class="side_menu">
+		<ion-content class="has-header">
+			<div class="row">
+				<div class="col col-60">
+					<div class="profile-card">
+						<img src="resource/images/icon.jpg" class="profile-image">
+					</div>
+				</div>
+			</div>
+			<ion-list>
+				<ion-item class="item text-center side_menu" nav-clear menu-close href="#/tab/my">
+					<i class="icon ion-ios7-videocam-outline"></i> 频道
+				</ion-item>
+				<ion-item class="item text-center side_menu" nav-clear menu-close href="#/tab/local">
+					<i class="icon ion-ios7-cloud-download-outline"></i> 离线下载
+				</ion-item>
+				<ion-item class="item text-center side_menu" nav-clear menu-close href="#/tab/setting">
+					<i class="icon ion-ios7-gear-outline"></i> 设置
+				</ion-item>
+			</ion-list>
+		</ion-content>
+	</ion-side-menu>
+</ion-side-menus>

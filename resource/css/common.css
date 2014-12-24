@@ -1,0 +1,98 @@
+* {
+	font-family: "Microsoft YaHei", "微软雅黑"
+}
+.noinfo {
+	font-size: 30px;
+	text-align: center;
+	color: #ddd;
+	padding: 50px 0;
+}
+img {
+	max-width: 100%;
+}
+.finish_mark {
+	color: #9BD08C;
+	font-size: 18px;
+}
+.text-left {
+	text-align: left !important;
+}
+.text-right {
+	text-align: right !important;
+}
+.iframe {
+	width: 100%;
+	height: 100%;
+}
+.side_menu {
+	background: #373950;
+}
+.side_menu .item {
+	border-color: #55576c !important;
+	color: #fff !important;
+}
+.side_menu .item-content:nth-child(odd) {
+	background: #31334a !important;
+}
+.side_menu .item-content:nth-child(even) {
+	background: #373950 !important;
+}
+.profile-card {
+	width: 100%;
+	text-align: center;
+	padding: 20px 0 50px 0;
+	line-height: 1.4;
+	text-shadow: rgba(0, 0, 0, 0.4) 0px 1px 0px;
+}
+
+.profile-image {
+	height: 120px;
+	width: 120px;
+	border: 3px solid #fd9b50;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;border 4px solid #ddd;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 0px 0px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 0px 0px;
+}
+
+.profile-name {
+	margin: 20px 0 0 0;
+	font-weight: 600;
+	font-size: 17px;
+}
+
+.profile-id {
+	margin: 0 0 5px 0;
+	font-size: 14px;
+	opacity: 0.6;
+}
+.font-grey {
+	color: grey;
+}
+.my_grid {
+	background: none !important;
+}
+.my_grid > li {
+	height: 100px;
+	position: relative;
+}
+.my_grid > li > .title {
+	position: absolute;
+	bottom: 5px;
+	font-weight: bold;
+}
+.mui-table-view-cell {
+	padding: 10px !important;
+}
+
+.logo {
+	max-height: 80%;
+	max-width: 100%;
+}
+.modal {
+	left: 0;
+	top: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}

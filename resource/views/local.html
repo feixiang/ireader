@@ -1,0 +1,28 @@
+<ion-view title="离线下载">
+	<ion-nav-buttons>
+		<button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+	</ion-nav-buttons>
+	<ion-nav-buttons side="right">
+		<button ng-click="download();" class="button button-icon icon ion-ios7-cloud-download-outline">
+			下载
+		</button>
+	</ion-nav-buttons>
+	<ion-content>
+		<ul class="list">
+			<li class="item item-icon-left item-icon-right" ng-click="selectGroup(item);">
+				<i class="icon ion-ios7-albums-outline"></i> 频道 <i class="icon ion-checkmark"></i>
+			</li>
+			<li ng-repeat="item in list">
+				<ion-toggle ng-model="item.check" toggle-class="toggle-calm">
+					<i ng-show="item.finish" class="icon ion-ios7-checkmark finish_mark"></i>
+					<i ng-show="!item.finish" class="icon ion-ios7-play"></i>
+					<i ng-show="item.loading" class="icon ion-loading-c"></i>
+					{{item.name}}
+				</ion-toggle>
+			</li>
+		</ul>
+		<button ng-click="download()" class="button button-block button-assertive">
+			开始
+		</button>
+	</ion-content>
+</ion-view>

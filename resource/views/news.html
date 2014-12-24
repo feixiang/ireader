@@ -1,0 +1,37 @@
+<ion-view title="{{name}}">
+	<ion-content>
+		<ion-refresher pulling-text="下拉刷新..." on-refresh="loadData()"></ion-refresher>
+		<div class="list">
+			<li ng-click="show($index)" class="item item-text-wrap item-icon-left item-icon-right" ng-repeat="item in list">
+				<i class="icon ion-quote"></i> {{item.title | getCdata}} <i class="icon ion-ios7-arrow-thin-right"></i>
+			</li>
+		</div>
+		<div class="noinfo" ng-show="noData">
+			没有信息
+		</div>
+	</ion-content>
+</ion-view>
+
+<script id="templates/modal.html" type="text/ng-template">
+	<ion-modal-view>
+		<ion-header-bar class="bar-assertive">
+			<div class="button button-clear" ng-click="modal.hide()">
+				<span class="icon ion-ios7-arrow-back"></span>
+			</div>
+			<h3 class="title"></h3>
+		</ion-header-bar>
+		<ion-slide-box show-pager=false>
+			<ion-slide ng-repeat="item in list">
+				<ion-scroll style="height:{{height}}px;margin-top:43px;" direction="y">
+					<div class="item item-divider item-text-wrap">
+						<i class="icon ion-quote"></i> {{item.title | getCdata}}
+					</div>
+					<div class="item item-body font-grey" ng-bind-html="(item.description|getCdata)"></div>
+					<div class="item item-divider text-right">
+						{{item.pubDate}}
+					</div>
+				</ion-scroll>
+			</ion-slide>
+			</ion-content>
+	</ion-modal-view>
+</script>

@@ -1,0 +1,23 @@
+<ion-view title="频道" cache-view="false">
+	<ion-nav-buttons side="left">
+		<button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+	</ion-nav-buttons>
+	<ion-content>
+		<div class="mui-card">
+			<ul class="mui-table-view mui-grid-view mui-grid-9 my_grid">
+				<li ng-click="toUrl(item)" ng-repeat="item in list" class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+					<img class="logo" ng-src="{{item.logo}}" />
+					<div class="mui-media-body title">
+						{{item.name}}
+					</div>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+					<a href="#/tab/add"> <span class="mui-icon mui-icon-plusempty"></span>
+					<div class="mui-media-body">
+						添加
+					</div></a>
+				</li>
+			</ul>
+		</div>
+	</ion-content>
+</ion-view>

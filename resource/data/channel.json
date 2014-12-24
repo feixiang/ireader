@@ -1,0 +1,43 @@
+[
+	{
+		"id": "1",
+		"name": "腾讯",
+		"logo": "http://mat1.gtimg.com/www/images/qq2012/qqlogo_1x.png",
+		"url": "http://n.rss.qq.com/rss/tech_rss.php",
+		"desc": "腾讯科技新闻",
+		"status": "1",
+		"writetime": "2014-11-22 16:13:15"
+	}, {
+		"id": "2",
+		"name": "新浪",
+		"logo": "http://i1.sinaimg.cn/dy/deco/2013/0329/logo/LOGO_1x.png",
+		"url": "http://rss.sina.com.cn/tech/rollnews.xml",
+		"desc": "新浪科技新闻",
+		"status": "1",
+		"writetime": "2014-11-22 16:13:48"
+	}, {
+		"id": "3",
+		"name": "知乎",
+		"logo": "http://m.yfway.com/MobileAPI/resource/images/zhihu.png",
+		"url": "http://rss.sina.com.cn/tech/rollnews.xml",
+		"desc": "知乎每日精选",
+		"status": "1",
+		"writetime": "2014-11-22 16:18:47"
+	}, {
+		"id": "5",
+		"name": "网易新闻",
+		"logo": "http://img1.cache.netease.com/cnews/css09/rss100121/logo.jpg",
+		"url": "http://tech.163.com/special/000944OI/headlines.xml",
+		"desc": "",
+		"status": "1",
+		"writetime": "2014-12-22 14:16:30"
+	}, {
+		"id": "6",
+		"name": "开源中国",
+		"logo": "http://www.oschina.net/img/logo_s2.png",
+		"url": "http://www.oschina.net/news/rss",
+		"desc": "",
+		"status": "1",
+		"writetime": "2014-12-22 13:45:06"
+	}
+]
